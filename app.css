@@ -1,0 +1,17 @@
+.video-preview {
+  background-color: #ddd;
+  border: 1px solid #333;
+  width: 640px;
+  height: 480px;
+}
+
+.record, .stop, .play {
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #eee;
+  border: 1px solid #333;
+  margin-top: 20px;
+  margin-right: 10px;
+}
