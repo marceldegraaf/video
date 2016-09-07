@@ -18,11 +18,13 @@ var Video = React.createClass({
     return(
       <div className="video-container">
         <Preview url={this.state.playbackURL} recording={this.state.recording} />
-        <Record onClickedHandler={this.startRecording} recording={this.state.recording} />
-        <Stop onClickedHandler={this.stopRecording} recording={this.state.recording} />
-        <Play onClickedHandler={this.playRecording} recording={this.state.recording} url={this.state.playbackURL} />
 
-        <Download name={this.state.fileName} url={this.state.downloadURL} onClickedHandler={this.downloadRecording} recording={this.state.recording} />
+        <div className="video-controls">
+          <Record onClickedHandler={this.startRecording} recording={this.state.recording} />
+          <Stop onClickedHandler={this.stopRecording} recording={this.state.recording} />
+          <Play onClickedHandler={this.playRecording} recording={this.state.recording} url={this.state.playbackURL} />
+          <Download name={this.state.fileName} url={this.state.downloadURL} onClickedHandler={this.downloadRecording} recording={this.state.recording} />
+        </div>
       </div>
     )
   },

@@ -3,6 +3,12 @@
   border: 1px solid #333;
   width: 640px;
   height: 480px;
+  margin: 0 auto;
+}
+
+.video-controls {
+  width: 640px;
+  margin: 0 auto;
 }
 
 .record, .stop, .play {
